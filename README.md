@@ -94,6 +94,29 @@ Clara-AI/
 
 ```mermaid
 flowchart TD
+    Data[Raw Audio / Chat]
+
+    %% Main pipeline
+    Data --> PA[Pipeline A]
+    PA --> V1[(V1 Config)]
+    V1 --> PB[Pipeline B]
+
+    %% Orchestrator path
+    Data --> Master[Master Pipeline]
+    Master --> V3[(V1 Config - By Master)]
+
+    %% Final merge
+    PB --> V2[(V2 Config & Changelog)]
+    V3 --> V2
+    Master -.-> V2
+```
+
+---
+
+### **Extraction Logic Flow**
+
+```mermaid
+flowchart TD
 
     %% Ingestion
     Start["Ingest Text"] --> PreExtract["Regex Pre-Extract Contacts"]
@@ -111,34 +134,6 @@ flowchart TD
 
     %% Output
     SchemaCheck --> EndSuccess["Valid JSON Output"]
-```
-
----
-
-### **Extraction Logic Flow**
-
-```mermaid
-flowchart TD
-
-    %% Ingestion
-    Start(["Ingest Text"])
-
-    %% Pre-processing
-    Start --> PreExtract[Regex Pre-Extract Contacts]
-
-    %% Decision
-    PreExtract --> CheckKey{API Key Present?}
-
-    %% Extraction paths
-    CheckKey -->|Yes| LLM[LLM Extraction - Llama 3.1]
-    CheckKey -->|No| Regex[Offline Regex Fallback]
-
-    %% Validation
-    LLM --> SchemaCheck[Pydantic Schema Validation]
-    Regex --> SchemaCheck
-
-    %% Output
-    SchemaCheck --> EndSuccess([Valid JSON Output])
 ```
 
 ---
@@ -235,7 +230,7 @@ python scripts/transcribe_audio.py --audio "data/Copy of audio1975518882.m4a" --
 
 ## 👤 Contributor
 
-**Dheeraj Papani -**
+**Dheeraj Papani**
 AI Engineer | Backend & Systems Development
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin)](https://www.linkedin.com/in/dheeraj-papani-507693274/)
