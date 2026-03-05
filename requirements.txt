@@ -2,4 +2,3 @@ groq
 pydantic
 openai-whisper
 deepdiff
-whisper
