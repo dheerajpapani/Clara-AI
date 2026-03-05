@@ -1,0 +1,43 @@
+{
+  "values_changed": {
+    "root['company_name']": {
+      "new_value": "G&M Pressure washing",
+      "old_value": "Benselectricsolutionsteam"
+    },
+    "root['contact_phone']": {
+      "new_value": "403-870-8494",
+      "old_value": "403-975-1773"
+    },
+    "root['contact_email']": {
+      "new_value": "info@benselectricsolutionsteam.com",
+      "old_value": "Ben@Benselectricsolutionsteam.com"
+    },
+    "root['notes']": {
+      "new_value": "Additional emails: gm_pressurewash@yahoo.ca",
+      "old_value": "Ben's business is relatively small, with a team of 4-5 people, including himself. He has 30 years of experience as an electrician and is looking to grow his business. He uses Jobber and CRM to manage his business, but has had issues with virtual receptionists and phone systems in the past."
+    },
+    "root['non_emergency_routing_rules']": {
+      "new_value": "Unknown",
+      "old_value": "Calls are routed to Ben in the office, who can guide the team out over the phone or troubleshoot issues."
+    },
+    "root['integration_constraints']": {
+      "new_value": "Unknown",
+      "old_value": "Jobber, CRM, QuickBooks"
+    },
+    "root['after_hours_flow_summary']": {
+      "new_value": "Unknown",
+      "old_value": "Ben is available to take calls and guide the team over the phone, but may not be able to physically visit the job site."
+    },
+    "root['office_hours_flow_summary']": {
+      "new_value": "Unknown",
+      "old_value": "Ben is available to take calls and guide the team over the phone, and can troubleshoot issues."
+    },
+    "root['services_supported'][0]": {
+      "new_value": "Pressure washing",
+      "old_value": "Electrical"
+    }
+  },
+  "iterable_item_added": {
+    "root['questions_or_unknowns'][3]": "Company name and contact person"
+  }
+}

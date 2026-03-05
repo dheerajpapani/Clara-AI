@@ -1,0 +1,33 @@
+{
+  "account_id": "account-2",
+  "company_name": "Benselectricsolutionsteam",
+  "contact_phone": "403-975-1773",
+  "contact_email": "Ben@Benselectricsolutionsteam.com",
+  "business_hours": {
+    "days": "Unknown",
+    "start": "Unknown",
+    "end": "Unknown",
+    "timezone": "Unknown"
+  },
+  "office_address": "Unknown",
+  "services_supported": [
+    "Electrical"
+  ],
+  "emergency_definition": [
+    "Unknown"
+  ],
+  "emergency_routing_rules": [
+    "Unknown"
+  ],
+  "non_emergency_routing_rules": "Calls are routed to Ben in the office, who can guide the team out over the phone or troubleshoot issues.",
+  "call_transfer_rules": "Unknown",
+  "integration_constraints": "Jobber, CRM, QuickBooks",
+  "after_hours_flow_summary": "Ben is available to take calls and guide the team over the phone, but may not be able to physically visit the job site.",
+  "office_hours_flow_summary": "Ben is available to take calls and guide the team over the phone, and can troubleshoot issues.",
+  "questions_or_unknowns": [
+    "How to use a virtual receptionist",
+    "How to set up a phone system with a company line",
+    "How to manage subcontractors"
+  ],
+  "notes": "Ben's business is relatively small, with a team of 4-5 people, including himself. He has 30 years of experience as an electrician and is looking to grow his business. He uses Jobber and CRM to manage his business, but has had issues with virtual receptionists and phone systems in the past."
+}

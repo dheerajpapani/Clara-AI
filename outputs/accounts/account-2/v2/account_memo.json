@@ -1,0 +1,34 @@
+{
+  "account_id": "account-2",
+  "company_name": "G&M Pressure washing",
+  "contact_phone": "403-870-8494",
+  "contact_email": "info@benselectricsolutionsteam.com",
+  "notes": "Additional emails: gm_pressurewash@yahoo.ca",
+  "business_hours": {
+    "days": "Unknown",
+    "start": "Unknown",
+    "end": "Unknown",
+    "timezone": "Unknown"
+  },
+  "office_address": "Unknown",
+  "services_supported": [
+    "Pressure washing"
+  ],
+  "emergency_definition": [
+    "Unknown"
+  ],
+  "emergency_routing_rules": [
+    "Unknown"
+  ],
+  "non_emergency_routing_rules": "Unknown",
+  "call_transfer_rules": "Unknown",
+  "integration_constraints": "Unknown",
+  "after_hours_flow_summary": "Unknown",
+  "office_hours_flow_summary": "Unknown",
+  "questions_or_unknowns": [
+    "How to use a virtual receptionist",
+    "How to set up a phone system with a company line",
+    "How to manage subcontractors",
+    "Company name and contact person"
+  ]
+}
