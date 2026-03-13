@@ -1,33 +1,43 @@
-# 🚀 **Clara AI Automation Pipeline**
+<div align="center">
+  
+  # 🤖 Clara-AI Automation Pipeline
+  
+  **Intelligent Multi-Phase Agent Orchestration & Extraction System**
 
-An end-to-end **automation pipeline** specifically engineered to process unstructured client conversations (such as demo calls and follow-up onboarding chats) into highly structured, deployment-ready AI voice agent configurations.
+  <p align="center">
+    <strong>Semantic Extraction • Regex Fallback • Master Orchestration</strong>
+  </p>
 
-It supports dynamic semantic extraction, intelligent regex fallback execution, strict dataset tracking, and clean JSON generation using Llama 3.1 8B.
+  <p align="center">
+    <img src="https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+    <img src="https://img.shields.io/badge/Llama_3.1-Groq-orange?style=for-the-badge&logo=meta&logoColor=white" alt="Llama 3.1" />
+    <img src="https://img.shields.io/badge/Pydantic-Validation-E92063?style=for-the-badge&logo=pydantic&logoColor=white" alt="Pydantic" />
+    <img src="https://img.shields.io/badge/Automation-Pipeline-blue?style=for-the-badge" alt="Automation Pipeline" />
+  </p>
+</div>
 
 ---
-
 ## 📘 Table of Contents
 
 - [Overview](#-overview)
 - [Key Features](#-key-features)
 - [Architecture](#-architecture)
 - [Architecture Diagrams](#-architecture-diagrams)
-- [Developer Setup Guide](#-developer-setup-guide)
+- [Getting Started](#-getting-started)
 - [Execution Commands](#-execution-commands)
 - [Optional Features](#-optional-features)
-- [Contributor](#-contributor)
+- [Contributor & Creator](#-contributor-and-creator)
 
 ---
 
-## 🌐 Overview
+## 📖 Overview
 
-The **Clara AI Automation Pipeline** executes extractions across distinct phases:
+**Clara-AI** is a high-performance automation pipeline engineered to transform unstructured client data (transcripts, chat logs, and voice notes) into strictly structured AI configurations. Originally developed as a specialized technical assignment, the project has evolved into a robust **Minimum Viable Product (MVP)** capable of handling complex onboarding workflows and semantic extraction entirely autonomously.
 
-- **Pipeline A (Demo Phase):** Parses raw demo call transcripts to build a foundational **Version 1** account and agent specification.
-- **Pipeline B (Onboarding Phase):** Integrates separate text chat updates dynamically upon the V1 baseline, establishing a newly tuned **Version 2** specification.
-- **Master Orchestrator:** Ties everything into a seamless, autonomous end-to-end execution.
-
-The engine functions perfectly with AI (via Groq API) or entirely offline using a highly-tuned Python Regex fallback system.
+The system features a dual-phase architecture:
+- **Pipeline A (Demo Phase)**: Extracts baseline intent from raw demo calls.
+- **Pipeline B (Onboarding Phase)**: Dynamically merges follow-up updates into existing configurations.
+- **Master Orchestrator**: Synchronizes both phases into a unified, traceable execution loop with deep-diff changelogs.
 
 ---
 
@@ -94,8 +104,6 @@ Clara-AI/
 
 ```mermaid
 flowchart TD
-    Data[Raw Audio / Chat]
-
     %% Main pipeline
     Data --> PA[Pipeline A]
     PA --> V1[(V1 Config)]
@@ -138,38 +146,24 @@ flowchart TD
 
 ---
 
-## 🧑‍💻 Developer Setup Guide
+## 🚀 Getting Started
 
-### 1️⃣ Clone repo
+### 1️⃣ Installation
 
 ```bash
 git clone https://github.com/dheerajpapani/Clara-AI.git
 cd Clara-AI
-```
-
-### 2️⃣ Backend setup
-
-```bash
-# Create and activate virtual environment
 python -m venv .venv
-
-# Windows
-.venv\Scripts\activate
-# Mac/Linux
-source .venv/bin/activate
-
-# Install dependencies
+# Activate: windows: .venv\Scripts\activate | linux: source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Optional API setup
-
-If you heavily require true AI generation (free setup):
-Create a `.env` file in the root directory and add your Groq Key:
-
+### 2️⃣ API Setup (Optional)
+Create a `.env` file in the root directory:
 ```text
 GROQ_API_KEY=your_key_here
 ```
+*Note: If no API key is present, the system automatically engages the **Local Regex Fallback Engine** for data extraction.*
 
 ---
 
@@ -228,13 +222,13 @@ python scripts/transcribe_audio.py --audio "data/Copy of audio1975518882.m4a" --
 
 ---
 
-## 👤 Contributor
+## 👤 Contributor and Creator
 
-**Dheeraj Papani**
-AI Engineer | Backend & Systems Development
+Developed and Maintained by **Dheeraj Papani**.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin)](https://www.linkedin.com/in/dheeraj-papani-507693274/)
-[![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/dheerajpapani)
-[![Gmail](https://img.shields.io/badge/Email-red?logo=gmail)](https://mail.google.com/mail/?view=cm&fs=1&to=dheerajpapani@gmail.com)
-
----
+<a href="https://github.com/dheerajpapani">
+  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile"/>
+</a>
+<a href="https://www.linkedin.com/in/dheerajpapani">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Profile"/>
+</a>
