@@ -1,0 +1,35 @@
+{
+  "account_id": "account-3",
+  "company_name": "G&M Pressure washing",
+  "contact_phone": "403-870-8494",
+  "contact_email": "info@benselectricsolutionsteam.com",
+  "business_hours": {
+    "days": "Unknown",
+    "start": "Unknown",
+    "end": "Unknown",
+    "timezone": "Unknown"
+  },
+  "office_address": "Unknown",
+  "services_supported": [
+    "Electrical"
+  ],
+  "emergency_definition": [
+    "Unknown"
+  ],
+  "emergency_routing_rules": [
+    "Unknown"
+  ],
+  "non_emergency_routing_rules": "Calls are routed to Ben in the office",
+  "call_transfer_rules": "Unknown",
+  "integration_constraints": "Jobber, CRM, QuickBooks",
+  "after_hours_flow_summary": "Ben is available to answer calls over the phone and can guide the team out of the field",
+  "office_hours_flow_summary": "Ben is available to answer calls in the office and can guide the team out of the field",
+  "questions_or_unknowns": [
+    "Business hours are not explicitly stated",
+    "Office address is not explicitly stated",
+    "Emergency definition and routing rules are not explicitly stated",
+    "Call transfer rules are not explicitly stated",
+    "Additional emails: gm_pressurewash@yahoo.ca"
+  ],
+  "notes": "Ben has 30 years of experience as an electrician and runs his own business with a team of four people, including himself. He uses Jobber and CRM to manage his business and is looking to grow his business with the help of Clara's AI solution."
+}
